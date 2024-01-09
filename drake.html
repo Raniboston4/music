@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=PT+Serif&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:rgba(141, 168, 241, 0.877);
+  margin: 0;
+  font-family: 'PT Serif', serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;  
+  background:  url(images/darkeb2.jpg) repeat;
+  height: 7em;
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(145, 187, 241);
+  color: rgb(53, 50, 50);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer{
+    padding: 1em;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-size: small;
+    font-family: 'PT Serif', serif;    
+}
+
+
+div.transbox {
+  margin: 30px;
+  background-color: rgb(145, 187, 241);
+  opacity: 0.9;
+}
+
+div.transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column {
+  font-size: large;
+}
+
+.imageleft {
+  float: left;
+  padding: 25px;
+}
+
+.imageright {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="transbox">
+  <h1> Drake</h1>
+</div>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="jcole.html"> J. Cole </a>
+    <a href="drake.html"> Drake </a>
+   
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>My Favorite Lyrics by Drake</h2>
+
+    <div class="imageleft">
+      <img src="images/drakesinging.jpg" width="200px">
+    </div>
+
+    <p>
+        <h4> Drake's rap style is always changing meaning that his music that he produces never gets stale. In total, Drake has about fifty billion streams. With 35.72 billion streams of his own songs and 14.30 billion streams of featured songs. He is reported to be the first artist to ever do this on Spotify. </h4>
+            <li>“I'm living inside a moment, not taking pictures to save it, I mean, how could I forget? My memory's never faded.” </li>
+            <li>"I gotta make it, I better make it, I promise if I'm not dead then I'm dedicated."</li>
+             <li>"Tables burn, bridges burn, you live and learn."</li> 
+            <li>"There's times when I wish I was where I was back when I used to wish I was here."</li>
+            <li>“I’m here to spread a message of hope. Follow your heart. Don’t follow what you’ve been told you’re supposed to do.”</li>
+            <li>"We live in a generation of not being in love and not being together"</li>
+            <li>“Too many times I’ve been wrong / I guess being right takes too long”</li>
+          </ul>
+    </p>
+
+    <p><h2>His Albums</h2></p>
+    <p>The discography of Drake consists of eight studio albums, one collaborative album, three compilation albums, four extended plays, seven mixtapes, one reissue, 141 singles (including 81 as a featured artist), five promotional singles and 84 music videos.</p>
+    <div class="imageright">
+      <img src="images/drakealbums.jpg" width="450px">
+    </div>
+    <p>Here are some of my recomendations off of each of his albums...</p>
+  
+    <div class="imageleft">
+      <img src="images/takecare.jpg" width="200px">
+   
+    <h4>Take Care </h4>
+    <ul class="a">
+      <li>The Ride</li>
+      <li>Cameras/ Good Ones Go Interlude</li>
+       <li>Headlines</li> 
+      <li>Crew Love</li>
+      <li>Doing It Wrong</li>
+    </ul>
+   </div>
+    <div class="imageleft">
+      <img src="images/views.jpg" width="200px">
+   
+    <h4>Views</h4>
+    <ul class="a">
+      <li>Childs PLay</li>
+      <li>Too Good Ft.Rihanna</li>
+       <li>Controlla</li> 
+      <li>Grammys Ft.Future</li>
+      <li>One Dance</li>
+    </ul>
+   </div>
+    <div class="imageleft">
+      <img src="images/if.jpg" width="200px">
+   
+    <h4>If You're Reading This <br>
+       It's Too Late</h4>
+    <ul class="a">
+      <li>Jungle</li>
+      <li>Preach </li>
+       <li>Know Yourself</li> 
+      <li>Energy</li>
+      <li>6PM in New York</li>
+    </ul>
+     </div>
+    <div class="imageleft">
+      <img src="images/dpg2.jpg" width="200px">
+    
+    <h4>For All The Dogs</h4>
+    <ul class="a">
+      <li>Virginia Beach</li>                                    
+      <li>Members Only</li>
+      <li>First Person Shooter</li>
+      <li>Drew A Picasso</li>
+      <li>Tried Our Best</li>
+        
+    </ul>
+  </div>
+    <div class="imageleft">
+      <img src="images/dark.jpg" width="200px">
+   
+    <h4>Dark Lane Demo Tapes</h4>
+    <ul class="a">
+      <li>Not You Too</li>
+      <li>Pain 1993</li>
+       <li>D4L</li> 
+      <li>Demons</li>
+      <li>Chicago Freestyle</li>
+    </ul>
+ </div>
+</div>
+<div class="footer">
+  <footer>
+   Jaishree Bhatia 
+      <br>P5 Web Design 
+      <br>Walpole High School 
+      <br>J. Reuther
+  </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

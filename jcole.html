@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=PT+Serif&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:rgba(141, 168, 241, 0.877);
+  margin: 0;
+  font-family: 'PT Serif', serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;  
+  background:  url(images/concertb.jpg) repeat;
+  height: 7em;
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(145, 187, 241);
+  color: rgb(53, 50, 50);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+    padding: 1em;
+    background:  url(images/footer.jpg) repeat;
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-family: 'PT Serif', serif;    
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: rgb(145, 187, 241);
+  opacity: 0.9;
+}
+
+div.transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column {
+  font-size: large;
+}
+
+.imageleft {
+  float: left;
+  padding: 25px;
+}
+
+.imageright {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="transbox">
+  <h1>  Jermaine Lamarr Cole</h1>
+</div>
+</div>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="jcole.html"> J. Cole </a>
+    <a href="drake.html"> Drake </a>
+
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>My Favorite J. Cole Lyrics</h2>
+
+    <div class="imageleft">
+      <img src="images/hoop.jpg" width="200px">
+    </div>
+
+    <p>
+        <h4> J.Cole's lyrics and story telling through his music is part of the reason why I believe that he is one of the best artists of this generation. Through his earnest storytelling, as he describes events and issues that he truly cares about, listeners develop a more intense connection with both Cole and the song itself simply for the emotions he evokes. </h4>
+        <ul class="a">
+            <li>“To appreciate the sun, you gotta know what rain is.” </li>
+            <li>“Anything’s possible, you gotta dream like you never seen obstacles.” – J Cole</li>
+             <li> “Take a chance, because you never know how perfect something can turn out.” – J Cole</li> 
+            <li>“I’d rather be happy being myself than sad trying to please everyone else.” – J Cole</li>
+            <li>“I’m here to spread a message of hope. Follow your heart. Don’t follow what you’ve been told you’re supposed to do.”</li>
+            <li>“Always gon’ be a whip that’s better than the one you got, always gon’ be some clothes that’s fresher than the ones you rock, always gon’ be a girl that’s badder out there on the tours, but you ain’t never gon’ be happy ‘til you love yours”</li>
+            <li>“Things change, rearrange, or so do I/ It ain’t always for the better, dawg, I can’t lie/ I get high ’cause the lows can be so cold/ I might bend a little bit but I don’t fold.”</li>
+          </ul>
+    </p>
+
+    <p><h2>His Albums</h2></p>
+    <p>Cole has released six studio albums, one live album, four compilation albums, three extended plays, three mixtapes, 58 singles (including 22 as a featured artist), two promotional singles and twenty one music videos.</p>
+ 
+    <div class="imageright">
+      <img src="images/Brown Orange Photo Collage Autumn Vibes LinkedIn Post .png" width="450px">
+    </div>
+    <p>Here are some of my recomendations off of each of his albums...</p>
+  
+    <div class="imageleft">
+      <img src="images/new2014.jpg" width="200px">
+   
+    <h4>2014 Forest Hills Drive</h4>
+    <ul class="a">
+      <li>Love Yourz </li>
+      <li> 03'Adolescence </li>
+       <li> Apparently</li> 
+      <li> A Tale of 2 Citiez</li>
+      <li>January 28th</li>
+    </ul>
+   </div>
+    <div class="imageleft">
+      <img src="images/fyeo.jpg" width="200px">
+   
+    <h4>For Your Eyez Only</h4>
+    <ul class="a">
+      <li>For Whom the Bell Tolls </li>
+      <li>Change</li>
+       <li>Ville Mentality</li> 
+      <li>Neighbors</li>
+      <li>Foldin Clothes</li>
+    </ul>
+   </div>
+    <div class="imageleft">
+      <img src="images/borns.jpg" width="200px">
+   
+    <h4>Born Sinners</h4>
+    <ul class="a">
+      <li>Land of Sankes</li>
+      <li>Power Trip</li>
+       <li>Sparks Will Fly</li> 
+      <li>Let Nas Down</li>
+      <li>Crooked Smile</li>
+    </ul>
+     </div>
+    <div class="imageleft">
+      <img src="images/kodnew.jpg" width="200px">
+    
+    <h4>KOD</h4>
+    <ul class="a">
+      <li>Kevin’s Heart</li>                                    
+      <li>KOD</li>
+      <li>ATM</li>
+      <li>Motiv8</li>
+      <li>Photographs</li>
+        
+    </ul>
+  </div>
+    <div class="imageleft">
+      <img src="images/offseaonn.jpg" width="200px">
+   
+    <h4>The Off-Season</h4>
+    <ul class="a">
+      <li>m y. l i f e </li>
+      <li>a m a r i </li>
+       <li>p r i d e. i s. t h e. d e v i l</li> 
+      <li>1 0 0. m i l'</li>
+      <li>t h e. c l i m b. b a c k</li>
+    </ul>
+ </div>
+</div>
+<div class="footer">
+  <footer>
+   Jaishree Bhatia 
+      <br>P5 Web Design 
+      <br>Walpole High School 
+      <br>J. Reuther
+  </footer>
+</div>
+</body>
+</html>
+
+
+
+

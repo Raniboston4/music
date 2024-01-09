@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=PT+Serif&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Serif', serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  background:  url(images/tyler.jpg) ;
+  height: 9em;
+ 
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: rgb(145, 187, 241);
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.imageright {
+  float: right;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+footer{
+    padding: 1em;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-size: small;
+    font-family: 'PT Serif', serif;
+    background-color: #a4dbffff;    
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #a4dbffff;
+  opacity: 0.9;
+}
+
+div.transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.image {
+  float: right;
+}
+
+.column {
+  font-size: large;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="transbox">
+  <h1>My Music Taste</h1>
+</div>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="jcole.html"> J. Cole </a>
+  <a href="drake.html"> Drake </a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Some of my favorite songs </h2>
+      <div class="imageright">
+      <img src="music.jpg"width="50%">
+    </div>
+    <p>I always find myself changing around my music rotation but these songs will always be played.</p>
+    <p>Here are some recomendations I have:</p>  
+    <ul class="a">
+      <li>Skeletons by Travis Scott</li>
+      <li>Under The Sun by Dreamville</li>
+      <li>Acting Like by Tory Lanez</li>
+      <li>Pyramids by Frank Ocean</li>
+      <li>Trance by Metro Boomin</li>
+      <li>The Ride by Drake</li>
+      <li>Pipe Down by Drake</li>
+      <li>The Party & After Party by The Weeknd</li>
+      <li>Let em' Know by Bryson Tiller</li>
+     <li>No Child Left Behind by Kanye West</li>
+     <li>Virginia Beach by Drake</li>
+    </ul>
+  
+    </div>
+
+    <h2>My Spotify Stats</h2>
+    <p>
+     <h4>Spotify shares its user stats throughout the year with its spotify wrapped. I am always looking forward to my spotify wrapped being released because my music taste tends vastly over the years. My stats this year kind of suprised me as I was not expecting a lot of these artists and songs to be featured on my wrapped.</p></h4>
+    </p>
+    <img src="images/wrapped.jpg" width="13%">
+    <img src="images/wrapped2.jpg" width="13%">
+    <img src="images/wrapped3.jpg" width="13%">
+    <img src="images/wrapped4.jpg" width="13%">
+    <h2>My Favorite Artits</h2>
+    <p>
+     My main genres of music that I listen to are rap and r&b. If you are gravitated to those genres of music, I highly recomened some of these artists:
+    </p>
+    <p>
+      <ul class="a">
+        <li>Drake</li>
+        <li>J. Cole</li>
+        <li>21 Savage</li>
+        <li>Tory Lanez</li>
+        <li>Travis Scott</li>
+        <li>Bryson Tiller</li>
+        <li>The Weeknd</li>
+        <li>Future</li>
+        <li>Brent Faiyaz</li>
+        <li>PARTYNEXTDOOR</li>
+      </ul>
+    </p>
+ 
+  </div>
+    <img src="images/rap.jpg" width="450px">
+  </div>
+</div>
+<div class="footer">
+    <footer>
+        A. Durso 
+        <br>P5 Web Design 
+        <br>Walpole High School 
+        <br>J. Reuther
+    </footer>
+</div>
+</body>
+</html>
